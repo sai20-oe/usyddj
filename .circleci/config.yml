@@ -5,8 +5,7 @@ version: 2
 
 jobs:
   build:
-    parallelism: 4
-    docker:
+    docker: 
       - image: circleci/golang:1.9
     steps:
       - run: ls
